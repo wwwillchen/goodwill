@@ -20,6 +20,11 @@
     &.nine { width: (100% * 9/12); flex: none; } 
     &.ten { width: (100% * 10/12); flex: none; } 
     &.eleven { width: (100% * 11/12); flex: none; }  
+    
+    &.offset-by-one { margin-left: (100% * 1/12); }
+    &.offset-by-two { margin-left: (100% * 2/12); }
+    &.offset-by-three { margin-left: (100% * 3/12); }
+    &.offset-by-four { margin-left: (100% * 4/12); }
   }
 
   .column.one-half {

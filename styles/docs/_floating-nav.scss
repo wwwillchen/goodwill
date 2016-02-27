@@ -1,0 +1,26 @@
+@media (max-width: 550px) {
+  .docs-floating-nav-bar {
+    display: none;
+  }  
+}
+@media (min-width: 550px) {
+  .docs-floating-nav-bar {
+    position: fixed;
+    font-size: .9rem;
+    color: $color-primary;
+    top: 5rem;
+    
+    &--docked {
+      position: absolute;
+      top: 15rem;
+    }
+    
+    &__list-item {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      line-height: 1.75rem;  
+    }
+  }
+}
+

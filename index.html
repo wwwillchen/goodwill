@@ -23,104 +23,119 @@
             <a href="http://github.com/willchen90" class="button button--subtle"> Author </a>
           </div>
         </nav>
-        <div class="hero-header">
-          <h1 class="align-center font-primary-darker"> Good Will CSS </h1>
-          <h5 class="align-center font-gray"> An experimental CSS framework </h5>
-        </div>
-        <div class="docs-section">
-          <h4 class="docs-header">Intro</h4>
-          Design goals:
-          <ul>
-            <li>Responsive</li>
-            <li>BEM naming convention</li>
-            <li>Flexbox</li>
-            <li>Support modern browsers (IE11 + Edge)</li>
-          </ul>
-          
-          Components:
-          <ul>
-            <li>Headings - done</li>
-            <li>Grids - add offset</li>
-            <li>Navbar - WIP</li>
-            <li>Buttons</li>
-            <li>Tables</li>
-            <li>Forms</li>
-            <li>Cards</li>
-            <li>Messages</li>
-            <li>Modals</li>
-          </ul>
-        </div>
-        <div class="docs-section">
-          <h4 class="docs-header">Grid</h4>
-          <ul>
-            <li>Simple responsive behavior</li>
-            <li>Supports short-hands</li>
-          </ul>
-          <div class="columns example-columns">
-            <div class="one column"><p>1</p></div><div class="eleven column"><p>11</p></div>
-            <div class="two column"><p>2</p></div><div class="ten column"><p>10</p></div>
-            <div class="three column"><p>3</p></div><div class="nine column"><p>9</p></div>
-            <div class="four column"><p>4</p></div><div class="eight column"><p>8</p></div>
-            <div class="five column"><p>5</p></div><div class="seven column"><p>7</p></div>
-            <div class="six column"><p>6</p></div><div class="six column"><p>6</p></div>
-            <div class="seven column"><p>7</p></div><div class="five column"><p>5</p></div>
-            <div class="eight column"><p>8</p></div><div class="four column"><p>4</p></div>
-            <div class="nine column"><p>9</p></div><div class="three column"><p>3</p></div>
-            <div class="ten column"><p>10</p></div><div class="two column"><p>2</p></div>
-            <div class="eleven column"><p>11</p></div><div class="one column"><p>1</p></div>
-          </div>  
-          <pre class="code-example">
-            <code class="code-example-body prettyprint">
-              <div class="columns">
-                <div class="one column"><p>1</p></div>
-                <div class="eleven column"><p>11</p></div>
-              </div>
-            </code>
-          </pre>
-        </div>
-        <div class="docs-section">
-          <h4 class="docs-header">Navbar</h4>
-          <div class="button">Button</div>
-        </div>
-        <div class="docs-section">
-          <h4 class="docs-header">Buttons</h4>
-          <div class="button">Button</div>
-        </div>
-        <div class="docs-section">
-          <h4 class="docs-header">Headings</h4>
-          <h1>h1: Heading 1 - This is what I look like</h1>
-          <h2>h2: Heading 2 - This is what I look like</h2>
-          <h3>h3: Heading 3 - This is what I look like</h3>
-          <h4>h4: Heading 4 - This is what I look like</h4>
-          <h5>h5: Heading 5 - This is what I look like</h5>
-          <h6>h6: Heading 6 - This is what I look like</h6>
-        </div>
-        <div class="docs-section">
-          <p>Hello world! This is HTML5 Boilerplate.</p>
-          
-          
-          <div class="columns">
-            <div class="column">
-              Buy why, some say, the moon? Why choose this as our goal? And they may as well ask why climb the highest mountain?
-            </div>
-            <div class="column">
-              We want to explore. We’re curious people. Look back over history, people have put their lives at stake to go out and explore … We believe in what we’re doing. Now it’s time to go.
-            </div>
-            <div class="column">
-              The regret on our side is, they used to say years ago, we are reading about you in science class. Now they say, we are reading about you in history class.
-            </div>
+        
+        <div class="columns">
+          <div class="two column docs-floating-nav-bar docs-floating-nav-bar--docked">
+            <strong>Guide:</strong>
+            <ul class="docs-floating-nav-bar__list-item">
+              <li><a href="#grid">Grid</a></li>
+              <li><a href="#headings">Headings</a></li>
+              <li>Buttons</li>
+              <li>Tables</li>
+              <li>Forms</li>
+              <li>Cards</li>
+              <li>Messages</li>
+              <li>Modals</li>
+            </ul>
           </div>
-          <div class="columns">
-            <div class="column one-half bg-primary-lighter font-gray-darker">
-              <h2> 50% Grid </h2>
-              We want to explore. We’re curious people. Look back over history, people have put their lives at stake to go out and explore … We believe in what we’re doing. Now it’s time to go.
-            </div>
-            <div class="column one-half bg-primary-darker font-gray-lighter">
-              <h2> 50% Grid </h2>
-              The regret on our side is, they used to say years ago, we are reading about you in science class. Now they say, we are reading about you in history class.
-            </div>
-          </div>
-        </div>
 
+          <div class="offset-by-two ten column">
+            <div class="hero-header">
+              <h1 class="align-center font-primary-darker"> Good Will CSS </h1>
+              <h5 class="align-center font-gray"> An experimental CSS framework </h5>
+            </div>
+            <div class="docs-section">
+              <h4 class="docs-header">Intro</h4>
+              Design goals:
+              <ul>
+                <li>Responsive</li>
+                <li>BEM naming convention</li>
+                <li>Flexbox</li>
+                <li>Support modern browsers (IE11 + Edge)</li>
+              </ul>
+              
+              <!--Components:
+              <ul>
+                <li>Headings - done</li>
+                <li>Grids - add offset</li>
+                <li>Navbar - WIP</li>
+                <li>Buttons</li>
+                <li>Tables</li>
+                <li>Forms</li>
+                <li>Cards</li>
+                <li>Messages</li>
+                <li>Modals</li>
+              </ul>-->
+            </div>
+            <div class="docs-section" id="grid">
+              <h4 class="docs-header">Grid</h4>
+              <ul>
+                <li>Simple responsive behavior</li>
+                <li>Supports short-hands</li>
+              </ul>
+              <div class="columns example-columns">
+                <div class="one column"><p>1</p></div><div class="eleven column"><p>11</p></div>
+                <div class="two column"><p>2</p></div><div class="ten column"><p>10</p></div>
+                <div class="three column"><p>3</p></div><div class="nine column"><p>9</p></div>
+                <div class="four column"><p>4</p></div><div class="eight column"><p>8</p></div>
+                <div class="five column"><p>5</p></div><div class="seven column"><p>7</p></div>
+                <div class="six column"><p>6</p></div><div class="six column"><p>6</p></div>
+                <div class="seven column"><p>7</p></div><div class="five column"><p>5</p></div>
+                <div class="eight column"><p>8</p></div><div class="four column"><p>4</p></div>
+                <div class="nine column"><p>9</p></div><div class="three column"><p>3</p></div>
+                <div class="ten column"><p>10</p></div><div class="two column"><p>2</p></div>
+                <div class="eleven column"><p>11</p></div><div class="one column"><p>1</p></div>
+              </div>  
+              <code class="code-example-body prettyprint">
+                <div class="columns">
+                  <div class="one column"><p>1</p></div>
+                  <div class="eleven column"><p>11</p></div>
+                </div>
+              </code>
+            </div>
+            <div class="docs-section" id="navbar">
+              <h4 class="docs-header">Navbar</h4>
+              <div class="button">Button</div>
+            </div>
+            <div class="docs-section">
+              <h4 class="docs-header">Buttons</h4>
+              <div class="button">Button</div>
+            </div>
+            <div class="docs-section" id="headings">
+              <h4 class="docs-header">Headings</h4>
+              <h1>h1: Heading 1 - This is what I look like</h1>
+              <h2>h2: Heading 2 - This is what I look like</h2>
+              <h3>h3: Heading 3 - This is what I look like</h3>
+              <h4>h4: Heading 4 - This is what I look like</h4>
+              <h5>h5: Heading 5 - This is what I look like</h5>
+              <h6>h6: Heading 6 - This is what I look like</h6>
+            </div>
+            <div class="docs-section">
+              <p>Hello world! This is HTML5 Boilerplate.</p>
+              
+              
+              <div class="columns">
+                <div class="column">
+                  Buy why, some say, the moon? Why choose this as our goal? And they may as well ask why climb the highest mountain?
+                </div>
+                <div class="column">
+                  We want to explore. We’re curious people. Look back over history, people have put their lives at stake to go out and explore … We believe in what we’re doing. Now it’s time to go.
+                </div>
+                <div class="column">
+                  The regret on our side is, they used to say years ago, we are reading about you in science class. Now they say, we are reading about you in history class.
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column one-half bg-primary-lighter font-gray-darker">
+                  <h2> 50% Grid </h2>
+                  We want to explore. We’re curious people. Look back over history, people have put their lives at stake to go out and explore … We believe in what we’re doing. Now it’s time to go.
+                </div>
+                <div class="column one-half bg-primary-darker font-gray-lighter">
+                  <h2> 50% Grid </h2>
+                  The regret on our side is, they used to say years ago, we are reading about you in science class. Now they say, we are reading about you in history class.
+                </div>
+              </div>
+            </div>
+          </div>
     </body>
 </html>

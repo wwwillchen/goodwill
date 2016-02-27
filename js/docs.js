@@ -2,11 +2,11 @@ $(document).ready(function() {
 
   // Variables
   var $codeSnippets = $('.code-example-body'),
-      $nav = $('.navbar'),
+      $nav = $('.docs-floating-nav-bar'),
       $body = $('body'),
       $window = $(window),
       $popoverLink = $('[data-popover]'),
-      navOffsetTop = $nav.offset().top,
+      navOffsetTop = $nav.offset().top - 100,
       $document = $(document),
       entityMap = {
         "&": "&amp;",
@@ -61,17 +61,17 @@ $(document).ready(function() {
 });
 
   function resize() {
-    $body.removeClass('has-docked-nav')
+    $nav.removeClass('docs-floating-nav-bar--docked')
     navOffsetTop = $nav.offset().top
     onScroll()
   }
 
   function onScroll() {
-    if(navOffsetTop < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
-      $body.addClass('has-docked-nav')
+    if(navOffsetTop > $window.scrollTop() && !$nav.hasClass('docs-floating-nav-bar--docked')) {
+      $nav.addClass('docs-floating-nav-bar--docked')
     }
-    if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
-      $body.removeClass('has-docked-nav')
+    if(navOffsetTop < $window.scrollTop() && $nav.hasClass('docs-floating-nav-bar--docked')) {
+      $nav.removeClass('docs-floating-nav-bar--docked')
     }
   }
 
