@@ -348,6 +348,14 @@ form .checkbox {
   form .checkbox input {
     width: 1rem; }
 
+.card {
+  width: 20rem;
+  padding: 16px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0 #d4d4d5,0 0 0 1px #d4d4d5; }
+  .card__title {
+    font-weight: 500; }
+
 .u-hide {
   display: none !important; }
 
@@ -359,6 +367,9 @@ form .checkbox {
 
 .u-align-right {
   text-align: right !important; }
+
+.u-float-right {
+  float: right !important; }
 
 .u-full-width {
   width: 100%; }
