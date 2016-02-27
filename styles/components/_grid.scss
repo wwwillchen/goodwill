@@ -2,11 +2,24 @@
   .columns {
     display: flex;
     flex-flow: row;
+    flex-wrap: wrap;
   }
 
   .column {
     flex: 1 1 auto;
-    padding: $gutter; 
+    padding: $gutter;
+    
+    &.one { width: (100% * 1/12); flex: none; } 
+    &.two { width: (100% * 2/12); flex: none; } 
+    &.three { width: (100% * 3/12); flex: none; } 
+    &.four { width: (100% * 4/12); flex: none; } 
+    &.five { width: (100% * 5/12); flex: none; } 
+    &.six { width: (100% * 6/12); flex: none; } 
+    &.seven { width: (100% * 7/12); flex: none; } 
+    &.eight { width: (100% * 8/12); flex: none; } 
+    &.nine { width: (100% * 9/12); flex: none; } 
+    &.ten { width: (100% * 10/12); flex: none; } 
+    &.eleven { width: (100% * 11/12); flex: none; }  
   }
 
   .column.one-half {

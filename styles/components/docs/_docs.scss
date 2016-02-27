@@ -1,0 +1,22 @@
+.docs-section {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  position: relative;
+  // border-top: 1px solid $gray-lighter;
+}
+
+.docs-section::before {
+  content: '';
+  width: 50%;
+  border-top: 1px solid $gray-lighter;
+  position: absolute;
+  top: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.docs-header {
+  color: font-gray;
+  margin-bottom: 2rem;
+}

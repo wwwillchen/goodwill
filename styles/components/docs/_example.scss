@@ -1,0 +1,11 @@
+.example-columns .column {
+  padding: 4px;
+}
+
+.example-columns p {
+  @extend .bg-gray-lighter;
+  border-radius: 10px;
+  text-align: center;
+  padding: 4px;
+  margin: 2px;
+}

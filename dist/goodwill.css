@@ -21,7 +21,7 @@ body {
 .bg-gray-light {
   background-color: #818a91; }
 
-.bg-gray-lighter {
+.bg-gray-lighter, .example-columns p {
   background-color: #eceeef; }
 
 .bg-gray-lightest {
@@ -111,10 +111,44 @@ h6 {
 @media (min-width: 550px) {
   .columns {
     display: flex;
-    flex-flow: row; }
+    flex-flow: row;
+    flex-wrap: wrap; }
   .column {
     flex: 1 1 auto;
     padding: 16px; }
+    .column.one {
+      width: 8.33333%;
+      flex: none; }
+    .column.two {
+      width: 16.66667%;
+      flex: none; }
+    .column.three {
+      width: 25%;
+      flex: none; }
+    .column.four {
+      width: 33.33333%;
+      flex: none; }
+    .column.five {
+      width: 41.66667%;
+      flex: none; }
+    .column.six {
+      width: 50%;
+      flex: none; }
+    .column.seven {
+      width: 58.33333%;
+      flex: none; }
+    .column.eight {
+      width: 66.66667%;
+      flex: none; }
+    .column.nine {
+      width: 75%;
+      flex: none; }
+    .column.ten {
+      width: 83.33333%;
+      flex: none; }
+    .column.eleven {
+      width: 91.66667%;
+      flex: none; }
   .column.one-half {
     width: 50%; } }
 
@@ -157,13 +191,36 @@ h6 {
 .button:hover {
   text-decoration: underline; }
 
+.hero-header {
+  margin-top: 2rem; }
+
 .docs-section {
   margin-top: 3rem;
   padding-top: 3rem;
-  border-top: 1px solid #eceeef; }
+  position: relative; }
+
+.docs-section::before {
+  content: '';
+  width: 50%;
+  border-top: 1px solid #eceeef;
+  position: absolute;
+  top: 0;
+  margin: auto;
+  left: 0;
+  right: 0; }
 
 .docs-header {
-  color: font-gray; }
+  color: font-gray;
+  margin-bottom: 2rem; }
+
+.example-columns .column {
+  padding: 4px; }
+
+.example-columns p {
+  border-radius: 10px;
+  text-align: center;
+  padding: 4px;
+  margin: 2px; }
 
 .hide {
   display: none !important; }
