@@ -1,0 +1,41 @@
+@mixin form-components {
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid $gray-lighter;
+  appearance: none;
+  font-weight: 300;
+  color: $gray;
+  background-color: white;
+}
+
+form {
+  label {
+    display: block;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+  }
+  input {
+    @include form-components;
+    padding: 0.5rem;
+  }
+  select {
+    @include form-components;
+    height: 2rem;
+  }
+  textarea {
+    @include form-components;
+    padding: 0.5rem;
+    height: 4rem;
+  }
+  .checkbox {
+    display: inline;
+    white-space: nowrap;
+    width: 100%;
+    font-weight: 300;
+    input {
+      width: 1rem;
+    }
+  }
+}
+

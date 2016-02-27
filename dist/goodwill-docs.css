@@ -130,7 +130,7 @@ th {
     flex-wrap: wrap; }
   .column {
     flex: 1 1 auto;
-    padding: 16px; }
+    padding: 8px; }
     .column.one {
       width: 8.33333%;
       flex: none; }
@@ -164,6 +164,9 @@ th {
     .column.eleven {
       width: 91.66667%;
       flex: none; }
+    .column.full {
+      width: 100%;
+      flex: none; }
     .column.one-half {
       width: 50%; }
     .column.one-third {
@@ -191,7 +194,10 @@ th {
     .column.offset-by-ten {
       margin-left: 83.33333%; }
     .column.offset-by-eleven {
-      margin-left: 91.66667%; } }
+      margin-left: 91.66667%; }
+    .column--tight {
+      padding-top: 4px;
+      padding-bottom: 4px; } }
 
 .container {
   width: auto;
@@ -243,7 +249,7 @@ th {
   color: white;
   outline: 0;
   padding: 12px;
-  margin: 8px; }
+  margin: 8px 16px 8px 0; }
   .button:active, .button.active {
     outline: 0; }
   .button--primary {
@@ -295,11 +301,67 @@ th {
 .hero-header {
   margin-top: 2rem; }
 
+form label {
+  display: block;
+  font-weight: 500;
+  padding-bottom: 0.5rem; }
+
+form input {
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #eceeef;
+  appearance: none;
+  font-weight: 300;
+  color: #55595c;
+  background-color: white;
+  padding: 0.5rem; }
+
+form select {
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #eceeef;
+  appearance: none;
+  font-weight: 300;
+  color: #55595c;
+  background-color: white;
+  height: 2rem; }
+
+form textarea {
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #eceeef;
+  appearance: none;
+  font-weight: 300;
+  color: #55595c;
+  background-color: white;
+  padding: 0.5rem;
+  height: 4rem; }
+
+form .checkbox {
+  display: inline;
+  white-space: nowrap;
+  width: 100%;
+  font-weight: 300; }
+  form .checkbox input {
+    width: 1rem; }
+
 .u-hide {
   display: none !important; }
 
+.u-vertical-center {
+  align-self: center; }
+
 .u-center {
   text-align: center !important; }
+
+.u-align-right {
+  text-align: right !important; }
+
+.u-full-width {
+  width: 100%; }
 
 .u-inline {
   display: inline !important;
@@ -457,7 +519,7 @@ li.L9 {
     font-size: .9rem;
     color: #3F51B5;
     top: 2rem;
-    left: 5rem; }
+    left: 3rem; }
     .docs-floating-nav-bar--docked {
       position: absolute;
       top: 15rem; }

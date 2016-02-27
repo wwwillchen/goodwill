@@ -8,7 +8,7 @@
   color: white;
   outline: 0;
   padding: ($gutter * 3 / 4);
-  margin: ($gutter / 2);
+  margin: ($gutter / 2) ($gutter) ($gutter / 2) 0;
   &:active, &.active {
     outline: 0;
   }

@@ -32,10 +32,11 @@
               <li><a href="#button">Button</a></li>
               <li><a href="#navbar">Navbar</a></li>
               <li><a href="#table">Table</a></li>
-              <li><a href="#forms">Form</a></li>
+              <li><a href="#form">Form</a></li>
+              <li><a href="#card">Card</a></li>
               <li><a href="#heading">Heading</a></li>
               
-              <li>Cards</li>
+              
               <li>Messages</li>
               <li>Modals</li>
             </ul>
@@ -254,16 +255,57 @@
             </div>
             <div class="docs-section" id="form">
               <h4 class="docs-header">Form</h4>
-              Common form elements
+              <form>
+                <div class="columns">
+                  <div class="one-half column">
+                    <label for="nameInput"> Full name </label>
+                    <input type="text" placeholder="Jane Mango" id="nameInput">
+                  </div>
+                  <div class="one-half column">
+                    <label for="emailInput"> Email </label>
+                    <input type="email" placeholder="test@mail.com" id="emailInput">
+                  </div>
+                  <div class="full column">
+                    <label for="emailInput"> Type of Feedback </label>
+                    <select id="feedbackType">
+                      <option value="Question">Question</option>
+                      <option value="Suggestion">Suggestion</option>
+                      <option value="Bug Report">Bug Report</option>
+                    </select>
+                  </div>
+                  <div class="full column column--tight">
+                    <label for="feedbackLongform"> Feedback </label>
+                    <textarea id="feedbackLongform" placeholder="Feedback..."></textarea>
+                  </div>
+                  <div class="three column column--tight">
+                    <button class="button button--primary" formaction="#form">Submit</button>
+                  </div>
+                  <div class="nine column column--tight u-vertical-center u-align-right">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span> Send copy to yourself</span>
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="docs-section" id="card">
+              <h4 class="docs-header">Card</h4>
+              <h1>h1: Heading 1</h1>
+              <h2>h2: Heading 2</h2>
+              <h3>h3: Heading 3</h3>
+              <h4>h4: Heading 4</h4>
+              <h5>h5: Heading 5</h5>
+              <h6>h6: Heading 6</h6>
             </div>
             <div class="docs-section" id="heading">
               <h4 class="docs-header">Headings</h4>
-              <h1>h1: Heading 1 - This is what I look like</h1>
-              <h2>h2: Heading 2 - This is what I look like</h2>
-              <h3>h3: Heading 3 - This is what I look like</h3>
-              <h4>h4: Heading 4 - This is what I look like</h4>
-              <h5>h5: Heading 5 - This is what I look like</h5>
-              <h6>h6: Heading 6 - This is what I look like</h6>
+              <h1>h1: Heading 1</h1>
+              <h2>h2: Heading 2</h2>
+              <h3>h3: Heading 3</h3>
+              <h4>h4: Heading 4</h4>
+              <h5>h5: Heading 5</h5>
+              <h6>h6: Heading 6</h6>
             </div>
             <div class="docs-section">
               <p>Hello world! This is HTML5 Boilerplate.</p>
