@@ -534,11 +534,6 @@ li.L9 {
     .docs-floating-nav-bar--docked {
       position: absolute;
       top: 15rem; }
-    .docs-floating-nav-bar__list-item {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      line-height: 1.75rem; }
     .docs-floating-nav-bar a {
       text-decoration: none;
       color: #3F51B5; }
@@ -548,3 +543,11 @@ li.L9 {
         color: #3F51B5; }
       .docs-floating-nav-bar a:hover {
         color: #3F51B5; } }
+
+.docs-list-group {
+  margin-top: 1rem; }
+  .docs-list-group__item {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.75rem; }
