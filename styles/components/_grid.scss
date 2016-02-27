@@ -1,0 +1,13 @@
+.columns {
+  display: flex;
+  flex-flow: row;
+}
+
+.column {
+  flex: 1 1 auto;
+  padding: $gutter; 
+}
+
+.column.one-half {
+  width: 50%;
+}
