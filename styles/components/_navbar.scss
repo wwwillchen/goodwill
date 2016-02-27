@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  &__left {
+    flex: 1 0 auto;
+  }
+  &__right {
+    flex: 0 1 auto;
+  }
+}
+
+.navbar--top {
+  margin-top: $gutter;
+  padding-top: $gutter;
+  padding-bottom: $gutter;
+}

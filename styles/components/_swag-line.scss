@@ -1,0 +1,12 @@
+.swag-line:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    z-index: 2;
+    background-color: $color-primary;
+    background: linear-gradient(45deg, $color-primary-darker, $color-primary)
+}

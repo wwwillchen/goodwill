@@ -1,0 +1,12 @@
+.button {
+  padding: $gutter;
+  text-decoration: none;
+}
+
+.button--subtle {
+  @extend .font-gray-dark;
+}
+
+.button:hover {
+  text-decoration: underline;
+}

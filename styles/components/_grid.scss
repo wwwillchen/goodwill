@@ -1,13 +1,15 @@
-.columns {
-  display: flex;
-  flex-flow: row;
-}
+@media (min-width: 550px) {
+  .columns {
+    display: flex;
+    flex-flow: row;
+  }
 
-.column {
-  flex: 1 1 auto;
-  padding: $gutter; 
-}
+  .column {
+    flex: 1 1 auto;
+    padding: $gutter; 
+  }
 
-.column.one-half {
-  width: 50%;
+  .column.one-half {
+    width: 50%;
+  }
 }
