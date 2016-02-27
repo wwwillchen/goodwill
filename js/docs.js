@@ -5,7 +5,7 @@ $(document).ready(function() {
       $nav = $('.docs-floating-nav-bar'),
       $body = $('body'),
       $window = $(window),
-      navOffsetTop = $nav.offset().top - 100,
+      navOffsetTop = $nav.offset().top - 30,
       $document = $(document),
       entityMap = {
         "&": "&amp;",

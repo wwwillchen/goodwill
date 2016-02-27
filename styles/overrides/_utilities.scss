@@ -1,7 +1,21 @@
-.hide {
+.u-hide {
   display: none !important;
 }
 
-.align-center {
+.u-center {
   text-align: center !important;
 }
+
+.u-inline {
+  display: inline !important;
+  padding: 0rem;
+}
+
+.u-small {
+  font-size: 0.75rem;
+}
+
+-u-xsmall {
+  font-size: 0.6rem;
+}
+

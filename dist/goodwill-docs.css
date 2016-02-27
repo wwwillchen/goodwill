@@ -116,6 +116,13 @@ code {
   padding: 1rem 1.5rem;
   white-space: pre; }
 
+.table__full {
+  width: 100%;
+  text-align: left; }
+
+th {
+  font-weight: 500; }
+
 @media (min-width: 550px) {
   .columns {
     display: flex;
@@ -218,6 +225,14 @@ code {
   padding-top: 16px;
   padding-bottom: 16px; }
 
+.navbar--inverted {
+  border-radius: 10px;
+  padding: 16px;
+  background: #3F51B5; }
+  .navbar--inverted .button {
+    background: #3F51B5;
+    color: #f7f7f9; }
+
 .button {
   padding: 16px;
   text-decoration: none;
@@ -266,19 +281,35 @@ code {
     background-color: white;
     color: #d9534f;
     border: 2px solid #d9534f; }
-  .button--subtle {
+  .button--basic {
     background-color: white;
     border: 0px;
     color: #373a3c; }
+  .button--small {
+    font-size: 0.75rem; }
+
+.button-set .button {
+  margin-left: 0;
+  margin-right: 0; }
 
 .hero-header {
   margin-top: 2rem; }
 
-.hide {
+.u-hide {
   display: none !important; }
 
-.align-center {
+.u-center {
   text-align: center !important; }
+
+.u-inline {
+  display: inline !important;
+  padding: 0rem; }
+
+.u-small {
+  font-size: 0.75rem; }
+
+-u-xsmall {
+  font-size: 0.6rem; }
 
 /* GitHub Theme */
 .prettyprint {
@@ -388,6 +419,9 @@ li.L9 {
   left: 0;
   right: 0; }
 
+.docs-sub-section {
+  margin-top: 2rem; }
+
 .docs-header {
   color: font-gray;
   margin-bottom: 2rem; }
@@ -396,6 +430,9 @@ li.L9 {
   white-space: pre;
   word-wrap: break-word;
   margin: 2rem; }
+
+.docs-variant {
+  margin-bottom: 0.25rem; }
 
 .example-columns .column {
   padding: 4px; }
@@ -406,6 +443,10 @@ li.L9 {
   padding: 4px;
   margin: 2px; }
 
+.example-container {
+  width: 90%;
+  padding: 16px; }
+
 @media (max-width: 550px) {
   .docs-floating-nav-bar {
     display: none; } }
@@ -415,7 +456,8 @@ li.L9 {
     position: fixed;
     font-size: .9rem;
     color: #3F51B5;
-    top: 5rem; }
+    top: 2rem;
+    left: 5rem; }
     .docs-floating-nav-bar--docked {
       position: absolute;
       top: 15rem; }
@@ -423,4 +465,13 @@ li.L9 {
       list-style-type: none;
       padding: 0;
       margin: 0;
-      line-height: 1.75rem; } }
+      line-height: 1.75rem; }
+    .docs-floating-nav-bar a {
+      text-decoration: none;
+      color: #3F51B5; }
+      .docs-floating-nav-bar a:active {
+        color: #3F51B5; }
+      .docs-floating-nav-bar a:visited {
+        color: #3F51B5; }
+      .docs-floating-nav-bar a:hover {
+        color: #3F51B5; } }

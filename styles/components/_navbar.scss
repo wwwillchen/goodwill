@@ -13,3 +13,13 @@
   padding-top: $gutter;
   padding-bottom: $gutter;
 }
+
+.navbar--inverted {
+  border-radius: 10px;
+  padding: $gutter;
+  background: $color-primary;
+  & .button {
+    background: $color-primary;
+    color: $gray-lightest;
+  }
+}

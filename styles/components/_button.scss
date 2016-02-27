@@ -62,9 +62,20 @@
     }  
   }
   
-  &--subtle {
+  &--basic {
     background-color: white;
     border: 0px;
     color: $gray-dark;
+  }
+  
+  &--small {
+    font-size: 0.75rem;
+  }
+}
+
+.button-set {
+  & .button {
+    margin-left: 0;
+    margin-right: 0;
   }
 }

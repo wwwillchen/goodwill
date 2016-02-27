@@ -1,6 +1,10 @@
 # Good Will CSS
 
-## Design Goals
+## To-dos
+
+- Fix nav in mobile
+- Add additional components
+- Setup visual diffing
 
 ## Install
 

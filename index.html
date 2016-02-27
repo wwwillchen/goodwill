@@ -13,26 +13,28 @@
         <link rel="stylesheet" href="dist/goodwill-docs.css">
          <script src="js/docs.js"></script>
     </head>
-    <body class="container swag-line">
+    <body class="container swag-line" id="top">
         <nav class="navbar navbar--top">
           <div class="navbar__left">
-            <a href="#" class="button button--subtle">Good Will CSS</a>
+            <a href="#" class="button button--basic">Good Will CSS</a>
           </div>
           <div class="navbar__right">
-            <a href="http://github.com/willchen90" class="button button--subtle"> Github Repo </a>
-            <a href="http://github.com/willchen90" class="button button--subtle"> Author </a>
+            <a href="http://github.com/willchen90" class="button button--basic"> Github Repo </a>
+            <a href="http://github.com/willchen90" class="button button--basic"> Author </a>
           </div>
         </nav>
         
         <div class="columns">
           <div class="two column docs-floating-nav-bar docs-floating-nav-bar--docked">
-            <strong>Guide:</strong>
+            <strong><a href="#top">Back to top:</a></strong>
             <ul class="docs-floating-nav-bar__list-item">
               <li><a href="#grid">Grid</a></li>
-              <li><a href="#headings">Headings</a></li>
-              <li>Buttons</li>
-              <li>Tables</li>
-              <li>Forms</li>
+              <li><a href="#button">Button</a></li>
+              <li><a href="#navbar">Navbar</a></li>
+              <li><a href="#table">Table</a></li>
+              <li><a href="#forms">Form</a></li>
+              <li><a href="#heading">Heading</a></li>
+              
               <li>Cards</li>
               <li>Messages</li>
               <li>Modals</li>
@@ -41,10 +43,10 @@
 
           <div class="offset-by-two ten column">
             <div class="hero-header">
-              <h1 class="align-center font-primary-darker"> Good Will CSS </h1>
-              <h5 class="align-center font-gray"> An experimental CSS framework </h5>
+              <h1 class="u-center font-primary-darker"> Good Will CSS </h1>
+              <h5 class="u-center font-gray"> An experimental CSS framework </h5>
             </div>
-            <div class="docs-section">
+            <div class="docs-section" id="intro">
               <h4 class="docs-header">Intro</h4>
               Design goals:
               <ul>
@@ -52,26 +54,15 @@
                 <li>BEM naming convention</li>
                 <li>Flexbox</li>
                 <li>Support modern browsers (IE11 + Edge)</li>
+                <li>Use semantic HTML elements</li>
               </ul>
               
-              <!--Components:
-              <ul>
-                <li>Headings - done</li>
-                <li>Grids - add offset</li>
-                <li>Navbar - WIP</li>
-                <li>Buttons</li>
-                <li>Tables</li>
-                <li>Forms</li>
-                <li>Cards</li>
-                <li>Messages</li>
-                <li>Modals</li>
-              </ul>-->
             </div>
             <div class="docs-section" id="grid">
               <h4 class="docs-header">Grid</h4>
               <ul>
-                <li>Simple responsive behavior</li>
-                <li>Supports short-hands</li>
+                <li>Simple responsive behavior - collapses when width < 550px (phablet)</li>
+                <li>Supports short-hands (e.g. <code class="u-inline">one-half, one-third, two-third</code>)</li>
               </ul>
               <div class="columns example-columns">
                 <div class="one column"><p>1</p></div><div class="eleven column"><p>11</p></div>
@@ -86,37 +77,186 @@
                 <div class="ten column"><p>10</p></div><div class="two column"><p>2</p></div>
                 <div class="eleven column"><p>11</p></div><div class="one column"><p>1</p></div>
               </div>  
-              <code class="code-example-body prettyprint">
-                <div class="columns">
-                  <div class="one column"><p>1</p></div>
-                  <div class="eleven column"><p>11</p></div>
-                </div>
-              </code>
+
+<code class="code-example-body prettyprint">
+  <!-- Column: specify width from one to eleven -->
+  <div class="columns">
+    <div class="one column"><p>1</p></div>
+    <div class="eleven column"><p>11</p></div>
+  </div>
+  
+  <!-- Offsets -->
+  <div class="columns">
+    <div class="offset-by-two ten column"></div>
+  </div>
+  
+  <!-- Shorthands -->
+  <div class="columns">
+    <div class="one-half column"></div>
+    <div class="one-half column"></div>
+  </div>
+  <div class="columns">
+    <div class="one-third column"></div>
+    <div class="two-thirds column"></div>
+  </div>
+  
+</code>
             </div>
-            <div class="docs-section" id="navbar">
-              <h4 class="docs-header">Navbar</h4>
-              <div class="button">Button</div>
-            </div>
-            <div class="docs-section">
+            <section class="docs-section" id="button">
               <h4 class="docs-header">Buttons</h4>
-              <div>
-                <h5>Regular Buttons</h5>
+              <section class="docs-sub-section">
+                <h6>Default Buttons</h6>
                 <button class="button button--primary">Primary Button</button>
                 <button class="button button--success">Success Button</button>
                 <button class="button button--info">Info Button</button>
                 <button class="button button--warning">Warning Button</button>
                 <button class="button button--danger">Danger Button</button>
-              </div>
-              <div>              
-                <h5>Outline Buttons</h5>
+              </section>
+              <section class="docs-sub-section">              
+                <h6>Outline Buttons</h6>
                 <button class="button button--outline-primary">Primary Button</button>
                 <button class="button button--outline-success">Success Button</button>
                 <button class="button button--outline-info">Info Button</button>
                 <button class="button button--outline-warning">Warning Button</button>
                 <button class="button button--outline-danger">Danger Button</button>
-              </div>
+              </section>
+              <section class="docs-sub-section">              
+                <h6>Smaller Outline Buttons</h6>
+                <button class="button button--outline-primary u-small">Primary Button</button>
+                <button class="button button--outline-success u-small">Success Button</button>
+                <button class="button button--outline-info u-small">Info Button</button>
+                <button class="button button--outline-warning u-small">Warning Button</button>
+                <button class="button button--outline-danger u-small">Danger Button</button>
+              </section>
+              <section class="docs-sub-section">              
+                <h6>Button Group</h6>
+                <p class="docs-variant"> Two Buttons  
+                  <div class="button-set">
+                    <button class="button button--outline-primary">Primary Button</button>
+                    <button class="button button--outline-success">Success Button</button>
+                  </div>
+                </p>
+                <p class="docs-variant"> Three Buttons 
+                  <div class="button-set">
+                    <button class="button button--outline-info">Info Button</button>
+                    <button class="button button--outline-warning">Warning Button</button>
+                    <button class="button button--outline-danger">Danger Button</button>
+                  </div>
+                </p>
+              </section>
+<code class="code-example-body prettyprint">
+  <!-- Default Buttons -->
+  <button class="button button--primary">Primary Button</button>
+  <button class="button button--success">Success Button</button>
+  <button class="button button--info">Info Button</button>
+  <button class="button button--warning">Warning Button</button>
+  <button class="button button--danger">Danger Button</button>
+  
+  <!-- Outline Button -->
+  <button class="button button--outline-primary">Primary Button</button>
+  
+  <!-- Smaller, Outline Button -->
+  <button class="button button--outline-primary u-small">Primary Button</button>
+  
+  <!-- Button Group -->
+  <div class="button-set">
+    <button class="button button--outline-primary">Primary Button</button>
+    <button class="button button--outline-success">Success Button</button>
+  </div>
+
+</code>
+            </section>
+            
+            
+            <section class="docs-section" id="navbar">
+              <h4 class="docs-header">Navbar</h4>
+              <button class="button">Button</button>
+              <section class="docs-sub-section">              
+                <h6>Default Navbar</h6>
+                <div class="example-container">
+                  <nav class="navbar">
+                    <div class="navbar__left">
+                      <a href="#" class="button button--basic"> Left Button </a>
+                    </div>
+                    <div class="navbar__right">
+                      <a href="#" class="button button--basic"> Right Button 1 </a>
+                      <a href="#" class="button button--basic"> Right Button 2 </a>
+                    </div>
+                  </nav>
+                </div>
+              </section>
+              <section class="docs-sub-section">              
+                <h6>Inverted Navbar</h6>
+                <div class="example-container">
+                  <nav class="navbar navbar--inverted">
+                      <div class="navbar__left">
+                        <a href="#" class="button button--basic"> Left Button </a>
+                      </div>
+                      <div class="navbar__right">
+                        <a href="#" class="button button--basic"> Right Button 1 </a>
+                        <a href="#" class="button button--basic"> Right Button 2 </a>
+                      </div>
+                    </nav>
+                  </div>
+              </section>
+<code class="code-example-body prettyprint">
+  <!-- Regular Navbar -->
+  <nav class="navbar">
+    <div class="navbar__left">
+      <a href="#" class="button button--basic"> Left Button </a>
+    </div>
+    <div class="navbar__right">
+      <a href="#" class="button button--basic"> Right Button 1 </a>
+      <a href="#" class="button button--basic"> Right Button 2 </a>
+    </div>
+  </nav>
+  
+  <!-- Inverted Navbar -->
+  <nav class="navbar navbar--inverted">
+    <div class="navbar__left">
+      <a href="#" class="button button--basic"> Left Button </a>
+    </div>
+    <div class="navbar__right">
+      <a href="#" class="button button--basic"> Right Button 1 </a>
+      <a href="#" class="button button--basic"> Right Button 2 </a>
+    </div>
+  </nav>
+</code>
+            </section>
+            
+            
+            <div class="docs-section" id="table">
+              <h4 class="docs-header">Table</h4>
+              <table class="table table__full">
+                <thead>
+                  <th> Name </th>
+                  <th> Phone Number </th>
+                  <th> Birthday </th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> Brendan Eich </td>
+                    <td> (408) 123 - 1234 </td>
+                    <td> 12 / 21 /80 </td>
+                  </tr>
+                  <tr>
+                    <td> Ken Thompson </td>
+                    <td> (212) 123 - 1234 </td>
+                    <td> 1 / 15 /70 </td>
+                  </tr>
+                  <tr>
+                    <td> Guido Van Rossum </td>
+                    <td> (212) 123 - 1234 </td>
+                    <td> 1 / 15 /70 </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="docs-section" id="headings">
+            <div class="docs-section" id="form">
+              <h4 class="docs-header">Form</h4>
+              Common form elements
+            </div>
+            <div class="docs-section" id="heading">
               <h4 class="docs-header">Headings</h4>
               <h1>h1: Heading 1 - This is what I look like</h1>
               <h2>h2: Heading 2 - This is what I look like</h2>

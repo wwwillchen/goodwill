@@ -9,3 +9,10 @@
   padding: 4px;
   margin: 2px;
 }
+
+.example-container {
+  width: 90%;
+  // border: 1px solid $color-primary;
+  // border-radius: 5px;s
+  padding: ($gutter);
+}
