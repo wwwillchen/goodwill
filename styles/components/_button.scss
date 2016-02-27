@@ -1,12 +1,70 @@
 .button {
   padding: $gutter;
   text-decoration: none;
-}
-
-.button--subtle {
-  @extend .font-gray-dark;
-}
-
-.button:hover {
-  text-decoration: underline;
+  border: 2px solid $color-primary;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: $color-primary;
+  color: white;
+  outline: 0;
+  padding: ($gutter * 3 / 4);
+  margin: ($gutter / 2);
+  &:active, &.active {
+    outline: 0;
+  }
+  
+  &--primary {
+    border: 2px solid $color-primary;
+    background-color: $color-primary;
+  }
+  &--success {
+    border: 2px solid $color-success;
+    background-color: $color-success;
+  }
+  &--info {
+    border: 2px solid $color-info;
+    background-color: $color-info;
+  }
+  &--warning {
+    border: 2px solid $color-warning;
+    background-color: $color-warning;
+  }
+  &--danger {
+    border: 2px solid $color-danger;
+    background-color: $color-danger;
+  }
+  
+  &--outline {
+    &-primary {
+      background-color: white;
+      color: $color-primary;
+      border: 2px solid $color-primary;
+    }
+    &-success {
+      background-color: white;
+      color: $color-success;
+      border: 2px solid $color-success;
+    }
+    &-info {
+      background-color: white;
+      color: $color-info;
+      border: 2px solid $color-info;
+    }
+    &-warning {
+      background-color: white;
+      color: $color-warning;
+      border: 2px solid $color-warning;
+    }
+    &-danger {
+      background-color: white;
+      color: $color-danger;
+      border: 2px solid $color-danger;
+    }  
+  }
+  
+  &--subtle {
+    background-color: white;
+    border: 0px;
+    color: $gray-dark;
+  }
 }

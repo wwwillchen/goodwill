@@ -51,7 +51,7 @@ strong {
 .bg-danger {
   background-color: #d9534f; }
 
-.font-gray-dark, .button--subtle {
+.font-gray-dark {
   color: #373a3c; }
 
 .font-gray {
@@ -157,6 +157,12 @@ code {
     .column.eleven {
       width: 91.66667%;
       flex: none; }
+    .column.one-half {
+      width: 50%; }
+    .column.one-third {
+      width: 33.33333%; }
+    .column.two-third, .column.two-thirds {
+      width: 66.66667%; }
     .column.offset-by-one {
       margin-left: 8.33333%; }
     .column.offset-by-two {
@@ -165,8 +171,20 @@ code {
       margin-left: 25%; }
     .column.offset-by-four {
       margin-left: 33.33333%; }
-  .column.one-half {
-    width: 50%; } }
+    .column.offset-by-five {
+      margin-left: 41.66667%; }
+    .column.offset-by-six {
+      margin-left: 50%; }
+    .column.offset-by-seven {
+      margin-left: 58.33333%; }
+    .column.offset-by-eight {
+      margin-left: 66.66667%; }
+    .column.offset-by-nine {
+      margin-left: 75%; }
+    .column.offset-by-ten {
+      margin-left: 83.33333%; }
+    .column.offset-by-eleven {
+      margin-left: 91.66667%; } }
 
 .container {
   width: auto;
@@ -202,10 +220,56 @@ code {
 
 .button {
   padding: 16px;
-  text-decoration: none; }
-
-.button:hover {
-  text-decoration: underline; }
+  text-decoration: none;
+  border: 2px solid #3F51B5;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #3F51B5;
+  color: white;
+  outline: 0;
+  padding: 12px;
+  margin: 8px; }
+  .button:active, .button.active {
+    outline: 0; }
+  .button--primary {
+    border: 2px solid #3F51B5;
+    background-color: #3F51B5; }
+  .button--success {
+    border: 2px solid #5cb85c;
+    background-color: #5cb85c; }
+  .button--info {
+    border: 2px solid #5bc0de;
+    background-color: #5bc0de; }
+  .button--warning {
+    border: 2px solid #f0ad4e;
+    background-color: #f0ad4e; }
+  .button--danger {
+    border: 2px solid #d9534f;
+    background-color: #d9534f; }
+  .button--outline-primary {
+    background-color: white;
+    color: #3F51B5;
+    border: 2px solid #3F51B5; }
+  .button--outline-success {
+    background-color: white;
+    color: #5cb85c;
+    border: 2px solid #5cb85c; }
+  .button--outline-info {
+    background-color: white;
+    color: #5bc0de;
+    border: 2px solid #5bc0de; }
+  .button--outline-warning {
+    background-color: white;
+    color: #f0ad4e;
+    border: 2px solid #f0ad4e; }
+  .button--outline-danger {
+    background-color: white;
+    color: #d9534f;
+    border: 2px solid #d9534f; }
+  .button--subtle {
+    background-color: white;
+    border: 0px;
+    color: #373a3c; }
 
 .hero-header {
   margin-top: 2rem; }
