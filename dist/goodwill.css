@@ -400,6 +400,27 @@ form .checkbox {
   .card__title {
     font-weight: 500; }
 
+.message {
+  width: 100%;
+  border-radius: 2px;
+  padding: 1rem;
+  margin: 1rem; }
+  .message--primary {
+    box-shadow: 0 0 0.5px 1px #3F51B5;
+    background-color: #d1d6ef; }
+  .message--success {
+    box-shadow: 0 0 0.5px 1px #5cb85c;
+    background-color: #c7e6c7; }
+  .message--info {
+    box-shadow: 0 0 0.5px 1px #5bc0de;
+    background-color: #daf1f8; }
+  .message--warning {
+    box-shadow: 0 0 0.5px 1px #f0ad4e;
+    background-color: #fceedb; }
+  .message--danger {
+    box-shadow: 0 0 0.5px 1px #d9534f;
+    background-color: #f4cecd; }
+
 .media {
   margin-top: 1rem; }
   .media__left {

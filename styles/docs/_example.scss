@@ -13,6 +13,9 @@
 .example-container {
   width: 90%;
   padding: ($gutter);
+  & .message {
+    position: relative;  
+  }
 }
 
 .example-media-container {
@@ -20,4 +23,16 @@
   border: 1px solid $gray-lighter;
   margin: auto;
   padding: $gutter
+}
+
+.example-message {
+  &__label {
+    top: 2px;
+    left: 5px;
+    position: absolute;
+    font-size: 0.5rem;
+    color: $gray-dark;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 }

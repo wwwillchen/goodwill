@@ -1,0 +1,27 @@
+@mixin message-color ($color, $lightenAmount) {
+  box-shadow: 0 0 0.5px 1px $color;
+  background-color: lighten($color, $lightenAmount);
+}
+
+.message {
+  width: 100%;
+  border-radius: 2px;
+  padding: 1rem;
+  margin: 1rem;
+  
+  &--primary {
+    @include message-color($color-primary, 40%);
+  }
+  &--success {
+    @include message-color($color-success, 30%);
+  }
+  &--info {
+    @include message-color($color-info, 30%);
+  }
+  &--warning {
+    @include message-color($color-warning, 30%);
+  }
+  &--danger {
+    @include message-color($color-danger, 30%);
+  }
+}
