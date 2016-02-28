@@ -1,0 +1,83 @@
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin: 0px;
+  text-align: center;
+  z-index: 1000;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@mixin loader-shape {
+  position: absolute;
+  content: '';
+  top: 0%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 500rem;  
+}
+
+/* Static Shape */
+.loader:before {
+  @include loader-shape;
+  border: 0.2em solid rgba(0, 0, 0, 0.1);
+}
+
+/* Active Shape */
+.loader:after {
+  @include loader-shape;
+  animation: loader 0.6s linear;
+  animation-iteration-count: infinite;
+  border-radius: 500rem;
+  border-color: #767676 transparent transparent;
+  border-style: solid;
+  border-width: 0.2em;
+  box-shadow: 0px 0px 0px 1px transparent;
+}
+
+// Coloring
+
+.loader {
+  color: rgba(255, 255, 255, 0.9);
+}
+.loader:before {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+.loader:after {
+  border-color: #ffffff transparent transparent;
+}
+
+.loader--inverted {
+  color: rgba(0, 0, 0, 0.87);
+}
+.loader--inverted:before {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.loader--inverted:after {
+  border-color: #767676 transparent transparent;
+}
+
+// Sizing
+
+.loader--small {
+  height: 25px;
+  width: 25px;
+}
+
+.loader--large {
+  height: 75px;
+  width: 75px;
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

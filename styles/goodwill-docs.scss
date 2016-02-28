@@ -2,6 +2,10 @@
 
 @import "docs/github-prettify-theme";
 
+// Potentially include these in the main framework
+@import "components/hero";
+@import "components/swag-line";
+
 @import "docs/docs";
 @import "docs/example";
 @import "docs/floating-nav";

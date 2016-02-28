@@ -123,6 +123,12 @@ code {
 th {
   font-weight: 500; }
 
+footer {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-size: 0.75rem; }
+
 @media (min-width: 550px) {
   .columns {
     display: -webkit-flex;
@@ -239,17 +245,21 @@ th {
   padding-left: 16px;
   padding-right: 16px; }
 
-.swag-line:before {
-  content: '';
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  z-index: 2;
-  background-color: #3F51B5;
-  background: linear-gradient(45deg, #303F9F, #3F51B5); }
+.media {
+  margin-top: 1rem; }
+  .media__left {
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 1rem; }
+  .media__body {
+    display: table-cell;
+    vertical-align: top; }
+  .media__object {
+    display: block; }
+  .media h1, .media h2, .media h3, .media h4, .media h5, .media h6 {
+    margin-bottom: 0.5rem; }
+  .media__heading {
+    font-weight: 500; }
 
 .navbar {
   display: -webkit-flex;
@@ -336,9 +346,6 @@ th {
   margin-left: 0;
   margin-right: 0; }
 
-.hero-header {
-  margin-top: 2rem; }
-
 form label {
   display: block;
   font-weight: 500;
@@ -421,21 +428,98 @@ form .checkbox {
     box-shadow: 0 0 0.5px 1px #d9534f;
     background-color: #f4cecd; }
 
-.media {
-  margin-top: 1rem; }
-  .media__left {
-    display: table-cell;
-    vertical-align: top;
-    padding-right: 1rem; }
-  .media__body {
-    display: table-cell;
-    vertical-align: top; }
-  .media__object {
-    display: block; }
-  .media h1, .media h2, .media h3, .media h4, .media h5, .media h6 {
-    margin-bottom: 0.5rem; }
-  .media__heading {
-    font-weight: 500; }
+.image--responsive {
+  max-width: 100%;
+  margin: auto;
+  height: auto; }
+
+.figure__caption {
+  margin-top: 0.5rem; }
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin: 0px;
+  text-align: center;
+  z-index: 1000;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+
+/* Static Shape */
+.loader:before {
+  position: absolute;
+  content: '';
+  top: 0%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 500rem;
+  border: 0.2em solid rgba(0, 0, 0, 0.1); }
+
+/* Active Shape */
+.loader:after {
+  position: absolute;
+  content: '';
+  top: 0%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 500rem;
+  -webkit-animation: loader 0.6s linear;
+  animation: loader 0.6s linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  border-radius: 500rem;
+  border-color: #767676 transparent transparent;
+  border-style: solid;
+  border-width: 0.2em;
+  box-shadow: 0px 0px 0px 1px transparent; }
+
+.loader {
+  color: rgba(255, 255, 255, 0.9); }
+
+.loader:before {
+  border-color: rgba(255, 255, 255, 0.15); }
+
+.loader:after {
+  border-color: #ffffff transparent transparent; }
+
+.loader--inverted {
+  color: rgba(0, 0, 0, 0.87); }
+
+.loader--inverted:before {
+  border-color: rgba(0, 0, 0, 0.1); }
+
+.loader--inverted:after {
+  border-color: #767676 transparent transparent; }
+
+.loader--small {
+  height: 25px;
+  width: 25px; }
+
+.loader--large {
+  height: 75px;
+  width: 75px; }
+
+@-webkit-keyframes loader {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes loader {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 
 .u-hide {
   display: none !important; }
@@ -560,6 +644,21 @@ li.L7,
 li.L9 {
   /* */ }
 
+.hero-header {
+  margin-top: 2rem; }
+
+.swag-line:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  z-index: 2;
+  background-color: #3F51B5;
+  background: linear-gradient(45deg, #303F9F, #3F51B5); }
+
 .docs-section {
   margin-top: 3rem;
   padding-top: 3rem;
@@ -580,12 +679,13 @@ li.L9 {
 
 .docs-header {
   color: font-gray;
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
 
 .code-example-body {
   white-space: pre;
   word-wrap: break-word;
-  margin: 2rem; }
+  margin: 2rem;
+  box-shadow: 0 0 0.25px 0.25px #818a91; }
 
 .docs-variant {
   margin-bottom: 0.25rem; }
@@ -619,6 +719,16 @@ li.L9 {
   color: #373a3c;
   font-weight: 600;
   text-transform: uppercase; }
+
+.example-loader-container {
+  position: relative;
+  height: 100px;
+  width: 90%;
+  padding: 16px; }
+
+.example-image-container {
+  width: 100%;
+  text-align: center; }
 
 @media (max-width: 550px) {
   .docs-floating-nav-bar {

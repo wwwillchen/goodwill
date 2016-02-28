@@ -36,3 +36,15 @@
     text-transform: uppercase;
   }
 }
+
+.example-loader-container {
+  position: relative;
+  height: 100px;
+  width: 90%;
+  padding: $gutter;
+}
+
+.example-image-container {
+  width: 100%;
+  text-align: center;
+}

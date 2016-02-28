@@ -33,8 +33,8 @@
               <ul class="docs-list-group__item">
                 <li><a href="#grid">Grid</a></li>
                 <li><a href="#media">Media</a></li>
-                <li><a href="#media">Image</a></li>
-                <li><a href="#media">Figure</a></li>
+                <li><a href="#image">Image</a></li>
+                <li><a href="#figure">Figure</a></li>
                 <li><a href="#heading">Heading</a></li>
               </ul>
             </div>
@@ -46,16 +46,14 @@
                 <li><a href="#table">Table</a></li>
                 <li><a href="#form">Form</a></li>
                 <li><a href="#card">Card</a></li>
-                <li>Messages</li>
-                <li>Modals</li>
+                <li><a href="#message">Message</a></li>
               </ul>
             </div>  
             <div class="docs-list-group">
               <strong>Misc:</strong>
               <ul class="docs-list-group__item">
-                <li><a href="#button">Loader</a></li>
-                <li><a href="#navbar">Tooltip</a></li>
-                <li><a href="#table">Utility</a></li>
+                <li><a href="#loader">Loader</a></li>
+                <li><a href="#utility">Utility</a></li>
               </ul>
             </div>  
           </div>
@@ -216,15 +214,38 @@
               <h4 class="docs-header">Image</h4>
               <ul>
                 <li>Responsive images</li>
-                <li>Image shapes</li>
-                <li>Alignment</li>
+                <li>Image shapes (todo)</li>
+                <li>Alignment (todo)</li>
               </ul>
+              <section class="docs-sub-section">
+                <h6>Responsive Image</h6>
+                <div class="container">
+                  <img class="image--responsive" src="holder.js/100px150?auto=yes" alt="250x100"></img>
+                </div>
+              </section>
 <code class="code-example-body prettyprint">
-  Hello World
+  <!-- Responsive Image -->
+  <img class="image--responsive" src="holder.js/100px150?auto=yes" alt="250x100"></img>
 </code>
             </section>
             <!-- end: IMAGE -->
-            
+            <!-- start: FIGURE -->
+            <div class="docs-section" id="figure">
+              <h4 class="docs-header">Figure</h4>
+              <figure class="figure">
+                <img data-src="holder.js/100px125?auto=yes" class="image--responsive" alt="image with caption">
+                <figcaption class="figure__caption">Caption for the above image.</figcaption>
+              </figure>
+<code class="code-example-body prettyprint">
+  <!-- Responsive Image -->
+  <figure class="figure">
+    <img data-src="holder.js/100px125?auto=yes" class="image--responsive" alt="image with caption">
+    <figcaption class="figure__caption">Caption for the above image.</figcaption>
+  </figure>
+</code>
+
+            </div>
+            <!-- end: FIGURE -->
             <!-- start: HEADING -->
             <div class="docs-section" id="heading">
               <h4 class="docs-header">Headings</h4>
@@ -497,7 +518,45 @@
   <div class="message message--danger"> Text </div>
 </code>
             </div>
+            
+
+            
+            <div class="docs-section" id="loader">
+              <h4 class="docs-header">Loader</h4>
+              <ul>
+                <li>Default loader for dark background, inverted loader for light background 
+                  (<code class="u-inline">loader--inverted</code>) </li>
+                <li>Different sizes: <code class="u-inline">loader--small, loader--large</code></li>
+              </ul>
+                  
+              <div class="example-loader-container">
+                <div class="loader loader--inverted"></div>
+              </div>
+                
+<code class="code-example-body prettyprint">
+  <!-- Inverted loader (light background) -->
+  <div class="loader loader--inverted"></div>
+  <!-- Default loader (dark background) -->
+  <div class="loader"></div>
+
+</code>
+            </div>
+            <div class="docs-section" id="utility">
+              <h4 class="docs-header">Utility</h4>
+                  
+              <ul>
+                <li>Prefixed with <code class="u-inline">u-</code></li>
+                <li><code class="u-inline">u-hide</code> display: none</li>
+              </ul>
+                
+<code class="code-example-body prettyprint">
+.u-hide {
+  display: none !important;
+}
+</code>
+            </div>
             <!-- end: MESSAGE -->
           </div>
+          <footer>(C)opyright 2016 by Will Chen</footer>
     </body>
 </html>

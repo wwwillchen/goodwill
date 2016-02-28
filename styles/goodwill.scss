@@ -10,17 +10,19 @@
 @import "base/headings";
 @import "base/code";
 @import "base/table";
+@import "base/footer";
 
 @import "components/grid";
 @import "components/container";
-@import "components/swag-line";
-@import "components/navbar";
-@import "components/button";
-@import "components/hero";
-@import "components/form";
-@import "components/card";
-@import "components/modal";
-@import "components/message";
 @import "components/media";
 
+@import "components/navbar";
+@import "components/button";
+@import "components/form";
+@import "components/card";
+@import "components/message";
+@import "components/image";
+@import "components/figure";
+
+@import "components/loader";
 @import "overrides/utilities";
