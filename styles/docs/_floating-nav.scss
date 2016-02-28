@@ -1,9 +1,9 @@
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   .docs-floating-nav-bar {
     display: none;
   }  
 }
-@media (min-width: 550px) {
+@media (min-width: 650px) {
   .docs-floating-nav-bar {
     position: fixed;
     font-size: .9rem;
@@ -30,6 +30,12 @@
         color: $color-primary;
       }
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  .docs-floating-nav-bar {
+    left: 5rem;
   }
 }
 

@@ -6,3 +6,15 @@
   padding-left: $gutter;
   padding-right: $gutter;
 }
+
+@media (min-width: 550px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 750px) {
+  .container {
+    max-width: 85%;
+  }
+}

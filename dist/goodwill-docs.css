@@ -245,14 +245,24 @@ footer {
   padding-left: 16px;
   padding-right: 16px; }
 
+@media (min-width: 550px) {
+  .container {
+    max-width: 90%; } }
+
+@media (min-width: 750px) {
+  .container {
+    max-width: 85%; } }
+
 .media {
-  margin-top: 1rem; }
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  white-space: pre-line; }
   .media__left {
-    display: table-cell;
     vertical-align: top;
     padding-right: 1rem; }
   .media__body {
-    display: table-cell;
     vertical-align: top; }
   .media__object {
     display: block; }
@@ -262,32 +272,33 @@ footer {
     font-weight: 500; }
 
 .navbar {
+  padding: 16px;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
   .navbar__left {
     -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
     flex: 1 0 auto; }
   .navbar__right {
-    -webkit-flex: 0 1 auto;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto; }
-
-.navbar--top {
-  margin-top: 16px;
-  padding-top: 16px;
-  padding-bottom: 16px; }
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto; }
+  .navbar--top {
+    margin-top: 16px; }
 
 .navbar--inverted {
   border-radius: 10px;
-  padding: 16px;
   background: #3F51B5; }
   .navbar--inverted .button {
     background: #3F51B5;
     color: #f7f7f9; }
 
 .button {
+  display: inline-block;
   padding: 16px;
   text-decoration: none;
   border: 2px solid #3F51B5;
@@ -730,11 +741,11 @@ li.L9 {
   width: 100%;
   text-align: center; }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   .docs-floating-nav-bar {
     display: none; } }
 
-@media (min-width: 550px) {
+@media (min-width: 650px) {
   .docs-floating-nav-bar {
     position: fixed;
     font-size: .9rem;
@@ -754,6 +765,10 @@ li.L9 {
         color: #3F51B5; }
       .docs-floating-nav-bar a:hover {
         color: #3F51B5; } }
+
+@media (min-width: 1024px) {
+  .docs-floating-nav-bar {
+    left: 5rem; } }
 
 .docs-list-group {
   margin-top: 1rem; }
