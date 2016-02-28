@@ -258,7 +258,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   margin-top: 1rem;
-  white-space: pre-line; }
+  white-space: pre-line;
+  padding: 1rem; }
   .media__left {
     vertical-align: top;
     padding-right: 1rem; }
@@ -286,7 +287,8 @@ footer {
   .navbar__right {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
-    flex: 1 1 auto; }
+    flex: 1 1 auto;
+    text-align: right; }
   .navbar--top {
     margin-top: 16px; }
 
