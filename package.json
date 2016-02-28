@@ -7,8 +7,11 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "node-sass -w -r styles/*.scss -o dist",
+    "start": "node-sass -w -r styles/*.scss -o dev",
+    "dist": "postcss --use autoprefixer dev/*.css -d dist",
+    "dist:watch": "postcss -w --use autoprefixer dev/*.css -d dist",
     "push": "git branch -D gh-pages; git checkout -b gh-pages; git push origin gh-pages; git checkout master",
+    "build": "npm run dist; npm run push",
     "test": "protractor test/config/protractor.js"
   },
   "author": "Will Chen",
@@ -16,6 +19,7 @@
   "devDependencies": {
     "eyes.protractor": "0.0.50",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
     "gulp-sass": "^2.2.0",
     "protractor": "3.0.0"
   }

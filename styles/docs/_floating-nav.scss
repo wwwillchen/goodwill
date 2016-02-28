@@ -17,17 +17,18 @@
     }
     
     & a {
-     text-decoration: none;
-     color: $color-primary;
-     &:active {
-       color: $color-primary;
-     }
-     &:visited {
-       color: $color-primary;
-     }
-     &:hover {
-       color: $color-primary;
-     }
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: $color-primary;
+      &:active {
+        color: $color-primary;
+      }
+      &:visited {
+        color: $color-primary;
+      }
+      &:hover {
+        color: $color-primary;
+      }
     }
   }
 }

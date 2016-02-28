@@ -12,7 +12,12 @@
 
 .example-container {
   width: 90%;
-  // border: 1px solid $color-primary;
-  // border-radius: 5px;s
   padding: ($gutter);
+}
+
+.example-media-container {
+  width: 80%;
+  border: 1px solid $gray-lighter;
+  margin: auto;
+  padding: $gutter
 }

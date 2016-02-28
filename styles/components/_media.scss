@@ -1,0 +1,21 @@
+.media {
+  margin-top: 1rem;
+  &__left {
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 1rem;
+  }
+  &__body {
+    display: table-cell;
+    vertical-align: top;
+  }
+  &__object {
+    display: block;
+  }
+  & h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+  }
+  &__heading {
+    font-weight: 500;
+  }
+}
