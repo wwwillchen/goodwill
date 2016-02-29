@@ -22,7 +22,6 @@ Primary goal is to learn CSS and Sass. Experimental framework.
 ## To-dos
 
 General issues:
-- Fix padding for navbar
 - Add table row border (similar to Skeleton)
 
 Mobile Issues:

@@ -273,7 +273,6 @@ footer {
     font-weight: 500; }
 
 .navbar {
-  padding: 16px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -694,12 +693,6 @@ li.L9 {
   color: font-gray;
   margin-bottom: 1rem; }
 
-.code-example-body {
-  white-space: pre;
-  word-wrap: break-word;
-  margin: 2rem;
-  box-shadow: 0 0 0.25px 0.25px #818a91; }
-
 .docs-variant {
   margin-bottom: 0.25rem; }
 
@@ -742,6 +735,12 @@ li.L9 {
 .example-image-container {
   width: 100%;
   text-align: center; }
+
+.code-example-body {
+  white-space: pre;
+  overflow: auto;
+  margin: 2rem;
+  box-shadow: 0 0 0.25px 0.25px #818a91; }
 
 @media (max-width: 650px) {
   .docs-floating-nav-bar {

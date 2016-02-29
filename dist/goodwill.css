@@ -273,7 +273,6 @@ footer {
     font-weight: 500; }
 
 .navbar {
-  padding: 16px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
