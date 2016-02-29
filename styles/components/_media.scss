@@ -1,11 +1,10 @@
 .media {
   display: flex;
   margin-top: 1rem;
-  white-space: pre-line;
-  padding: 1rem;
+  padding: 0.5rem;
   &__left {
     vertical-align: top;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
   }
   &__body {
     vertical-align: top;
@@ -19,4 +18,6 @@
   &__heading {
     font-weight: 500;
   }
+  word-wrap: break-word;
+  word-break: break-word;
 }

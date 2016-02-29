@@ -3,6 +3,11 @@
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
+    
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+    
   }
 
   .column {
@@ -42,6 +47,10 @@
     &--tight {
       padding-top: $gutter / 4;
       padding-bottom: $gutter / 4;
+    }
+    
+    &--grow {
+      flex-grow: 10;
     }
   }
   

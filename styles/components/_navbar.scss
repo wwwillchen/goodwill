@@ -5,8 +5,7 @@
     flex: 1 0 auto;
   }
   &__right {
-    flex: 1 1 auto;
-    text-align: right;
+    flex: 0 1 auto;
   }
   &--top {
     margin-top: $gutter;  

@@ -21,6 +21,7 @@ form {
   select {
     @include form-components;
     height: 2rem;
+    padding: 0.5rem;
   }
   textarea {
     @include form-components;

@@ -24,35 +24,6 @@ Primary goal is to learn CSS and Sass. Experimental framework.
 General issues:
 - Add table row border (similar to Skeleton)
 
-Mobile Issues:
-
-- Use em for smaller text in nested media object
-- Fix nav for smaller and wider screen (use flex)
-- Make code-example larger width
-- Forms
-  - Fix padding for selection
-  - Align submit and checkbox
-  - Make checkbox selectable
-- Make card responsive (max-width: 100%; width: 20rem)
-
-FF Issues:
-
-- Make text wrap for code block
-- Fix font for textarea input
-
-Safari Issues:
-
-- Media block is overflowing to left
-
-IE11 Issue:
-
-- Media block; text overflows to right
-- Navbar split across two lines in example (800 x 600 resolution)
-
-Refactor
-
-- Remove hardcode border radius
-- Return comps
 - CSS lint
 
 ### Testing

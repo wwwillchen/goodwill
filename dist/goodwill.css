@@ -140,6 +140,10 @@ footer {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
+    .columns--reverse {
+      -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; }
   .column {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
@@ -235,7 +239,11 @@ footer {
       margin-left: 91.66667%; }
     .column--tight {
       padding-top: 4px;
-      padding-bottom: 4px; } }
+      padding-bottom: 4px; }
+    .column--grow {
+      -webkit-flex-grow: 10;
+      -ms-flex-positive: 10;
+      flex-grow: 10; } }
 
 .container {
   width: auto;
@@ -258,11 +266,12 @@ footer {
   display: -ms-flexbox;
   display: flex;
   margin-top: 1rem;
-  white-space: pre-line;
-  padding: 1rem; }
+  padding: 0.5rem;
+  word-wrap: break-word;
+  word-break: break-word; }
   .media__left {
     vertical-align: top;
-    padding-right: 1rem; }
+    padding-right: 0.5rem; }
   .media__body {
     vertical-align: top; }
   .media__object {
@@ -284,10 +293,9 @@ footer {
     -ms-flex: 1 0 auto;
     flex: 1 0 auto; }
   .navbar__right {
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    text-align: right; }
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto; }
   .navbar--top {
     margin-top: 16px; }
 
@@ -368,9 +376,6 @@ form input {
   font-size: 1rem;
   border-radius: 5px;
   border: 1px solid #eceeef;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   font-weight: 300;
   color: #55595c;
   background-color: white;
@@ -381,37 +386,29 @@ form select {
   font-size: 1rem;
   border-radius: 5px;
   border: 1px solid #eceeef;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   font-weight: 300;
   color: #55595c;
   background-color: white;
-  height: 2rem; }
+  height: 2rem;
+  padding: 0.5rem; }
 
 form textarea {
   width: 100%;
   font-size: 1rem;
   border-radius: 5px;
   border: 1px solid #eceeef;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   font-weight: 300;
   color: #55595c;
   background-color: white;
+  font-family: inherit;
   padding: 0.5rem;
   height: 4rem; }
 
-form .checkbox {
-  display: inline;
-  white-space: nowrap;
-  width: 100%;
-  font-weight: 300; }
-  form .checkbox input {
-    width: 1rem; }
+form .checkbox input {
+  width: 1rem; }
 
 .card {
+  max-width: 100%;
   width: 20rem;
   padding: 16px;
   border-radius: 5px;

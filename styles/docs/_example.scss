@@ -19,10 +19,11 @@
 }
 
 .example-media-container {
-  width: 80%;
+  width: 100%;
   border: 1px solid $gray-lighter;
   margin: auto;
-  padding: $gutter
+  padding: ($gutter / 2);
+  font-size: 0.8rem;
 }
 
 .example-message {
