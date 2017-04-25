@@ -1,5 +1,7 @@
 # Good Will CSS
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/wwwillchen/goodwill.svg)](https://greenkeeper.io/)
+
 ## Goals
 
 Primary goal is to learn CSS and Sass. Experimental framework.
